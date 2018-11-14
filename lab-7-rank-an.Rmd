@@ -27,6 +27,32 @@ kermit_hist
 # Was there a sig difference in kermit perception for pre-talk and post-talk scores?
 ```
 
+An's going to do some rank-based tests.  
+
+First, is there a significant difference in pre-talk Kermit scores for males and females?
+```{r}
+# values: Score.pre
+# levels: Gender
+# data are not paired because you're only looking at pre-talk for males and females
+# therefore, use Mann-Whitney U
+
+
+mwu_kermit <- kermit %>% 
+  wilcox.test(Score.pre ~ Gender, 
+              data = .) # message: cannot compute exact p-value with ties, which is fine - just a correction for ties
+
+mwu_kermit
+```
+There is no significant difference in pre-talk Kermit ranks for males and females.
+
+
+
+
+
+
+
+
+
 
 
 
