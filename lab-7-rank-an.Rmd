@@ -11,6 +11,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 An made this repo and markdown doc!
 
+I am Sam and I am a collaborator! I'm going to make some histograms
+
+```{r}
+library(tidyverse)
+kermit <- read_csv("kermit.csv")
+
+# Sam made a histogram
+kermit_hist <- ggplot(kermit, aes(x = Score.pre)) +
+  geom_histogram() +
+  facet_wrap(~ Gender)
+
+kermit_hist
+
+# Was there a sig difference in kermit perception for pre-talk and post-talk scores?
+```
+
+
 
 
 
