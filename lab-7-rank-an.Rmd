@@ -1,0 +1,16 @@
+---
+title: 'Lab 7: Rank-based tests'
+author: "An Bui"
+date: "14 November 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+An made this repo and markdown doc!
+
+
+
+
